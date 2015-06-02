@@ -10,3 +10,4 @@ xhr.onreadystatechange = function() {
 }
 xhr.open('GET', 'https://adblade.com/control/profile', true);
 xhr.send(null);
+ 
