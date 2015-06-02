@@ -1,10 +1,10 @@
-var responseHTML = document.createElement('HTML');
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
-        responseHTML.innerHTML = xhr.responseText;
-        var email = responseHTML.getElementById('email');
+        var derp =  xhr.responseText;
+        var subStr = derp.match('email" value="(.*)" />');
+            alert(subStr[1]);
 
     }
 }
